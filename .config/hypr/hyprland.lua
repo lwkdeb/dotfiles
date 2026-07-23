@@ -1,10 +1,7 @@
--- https://wiki.hypr.land/Configuring/
-
 require("land.binds")
 require("land.windows")
 require("land.looks")
 
--- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 hl.monitor({
     output = "eDP-1",
     mode = "1920x1080@144",
@@ -12,7 +9,6 @@ hl.monitor({
     scale = 1.20,
 })
 
--- See https://wiki.hypr.land/Configuring/Basics/Autostart/
 hl.on("hyprland.start", function()
     -- hl.exec_cmd("nm-applet")
     -- hl.exec_cmd("blueman-applet")
@@ -30,7 +26,7 @@ hl.on("hyprland.start", function()
     -- hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
 end)
 
--- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/
+
 hl.env("XCURSOR_SIZE", "16")
 hl.env("XCURSOR_THEME", "Bibata-Modern-Classic")
 hl.env("HYPRCURSOR_SIZE", "16")
