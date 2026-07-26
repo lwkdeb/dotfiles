@@ -8,7 +8,7 @@
 local ipc = "noctalia msg"
 local mod = "SUPER"
 local terminal = "kitty"
-local fileManager = "nautilus"
+local fileManager = "pcmanfm"
 
 hl.bind(mod .. " + Q", hl.dsp.exec_cmd(terminal))
 hl.bind(mod .. " + C", hl.dsp.window.close())
@@ -22,7 +22,6 @@ hl.bind(mod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mod .. " + Z", hl.dsp.exec_cmd("zen-browser"))
 hl.bind(mod .. " + T", hl.dsp.exec_cmd("vscodium"))
 -- hl.bind(mod .. " + A", hl.dsp.exec_cmd("pkill wofi || wofi --show drun"))
--- hl.bind(mod .. " + A", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call launcher toggle"))
 hl.bind(mod .. " + A", hl.dsp.exec_cmd(ipc .. " panel-toggle launcher"))
 
 -- Screenshot with hyprshot

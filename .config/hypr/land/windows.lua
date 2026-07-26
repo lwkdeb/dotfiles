@@ -52,12 +52,12 @@ hl.window_rule({
 -- active 0.95, inactive 0.85, fullscreen 1.0
 hl.window_rule({
     match   = { class = "kitty" },
-    opacity = "0.90 override 0.85 override 1.0 override",
+    opacity = "0.85 override 0.85 override 1.0 override",
 })
---hl.window_rule({
---    match   = { class = "kitty" },
---    opacity = "0.95 override 0.85 override 1.0 override",
---})
+hl.window_rule({
+    match   = { class = "pcmanfm" },
+    opacity = "0.85 override 0.85 override 1.0 override",
+})
 
 -- Idle inhibit rules (uncomment as needed)
 -- hl.window_rule({ match = { class = "^(.*celluloid.*)$|^(.*mpv.*)$|^(.*vlc.*)$" },   idle_inhibit = "fullscreen" })
@@ -96,7 +96,7 @@ hl.window_rule({
     center = true,
 })
 
--- GNOME To Do
+
 hl.window_rule({
     match  = { class = "^(org.gnome.Todo)$" },
     float  = true,
