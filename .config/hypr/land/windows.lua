@@ -104,6 +104,12 @@ hl.window_rule({
     center = true,
 })
 
+hl.window_rule({
+    match  = { class = "^(xgd-desktop-portal-gtk)$" },
+    float  = true,
+    size   = { 550, 600 },
+    center = true,
+})
 
 
 -- Disable blur for xwayland context menus

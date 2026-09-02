@@ -1,12 +1,13 @@
 require("land.binds")
 require("land.windows")
 require("land.looks")
-
+--require("v2/lnf")
+--require("v2/window")
 hl.monitor({
     output = "eDP-1",
     mode = "1920x1080@144",
     position = "auto",
-    scale = 1.20,
+    scale = 1.2,
 })
 
 hl.on("hyprland.start", function()
@@ -63,7 +64,7 @@ hl.config({
         middle_click_paste = false,
         animate_manual_resizes = true,
         animate_mouse_windowdragging = true,
-        vrr = true,
+        vrr = false,
         mouse_move_enables_dpms = false,
         key_press_enables_dpms = true,
     },
@@ -78,3 +79,4 @@ hl.gesture({
     direction = "horizontal",
     action = "workspace",
 })
+

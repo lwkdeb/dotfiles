@@ -11,7 +11,7 @@ hl.config({
             active_border   = { colors = { "rgba(3a3a3aaa)"}, angle = 45 },
             inactive_border = "rgba(3a3a3aaa)",
         },
-        resize_on_border = false,
+        resize_on_border = true,
         allow_tearing    = false,
         layout           = "dwindle",
     },
