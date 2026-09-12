@@ -3,6 +3,7 @@ require("land.windows")
 require("land.looks")
 --require("v2/lnf")
 --require("v2/window")
+
 hl.monitor({
     output = "eDP-1",
     mode = "1920x1080@144",
@@ -14,7 +15,6 @@ hl.on("hyprland.start", function()
     -- hl.exec_cmd("nm-applet")
     -- hl.exec_cmd("blueman-applet")
     -- hl.exec_cmd("/usr/lib/polkit-kde-authentication-agent-1")
-    -- hl.exec_cmd("qs -c noctalia-shell")
     hl.exec_cmd("noctalia")
     -- hl.exec_cmd("systemctl --user start hyprpolkitagent")
     -- hl.exec_cmd("waypaper --restore")
@@ -22,7 +22,6 @@ hl.on("hyprland.start", function()
     -- hl.exec_cmd("swaync")
     -- hl.exec_cmd("hypridle")
     -- hl.exec_cmd("~/.config/hypr/scripts/gamebinds.sh")
-    -- hl.exec_cmd("~/.config/hypr/scripts/batterynoti.sh")
     -- hl.exec_cmd("wl-paste --watch cliphist store")
     -- hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
 end)
@@ -67,10 +66,12 @@ hl.config({
         vrr = false,
         mouse_move_enables_dpms = false,
         key_press_enables_dpms = true,
+        disable_splash_rendering = false,
     },
 
     cursor = {
         inactive_timeout = 15,
+	    no_warps = true,
     },
 })
 
@@ -80,3 +81,4 @@ hl.gesture({
     action = "workspace",
 })
 
+hl.workspace_rule({ workspace = "9", persistent = true })
