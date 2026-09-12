@@ -81,4 +81,3 @@ hl.gesture({
     action = "workspace",
 })
 
-hl.workspace_rule({ workspace = "9", persistent = true })

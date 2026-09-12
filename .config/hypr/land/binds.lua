@@ -58,8 +58,6 @@ hl.bind("mouse:276", hl.dsp.focus({ workspace = "e+1" }))
 hl.bind("mouse:275", hl.dsp.focus({ workspace = "e-1" }))
 hl.bind("mouse:274", hl.dsp.exec_cmd("~/.config/hypr/scripts/switchtoemptyws.sh"))
 
-
-
 -- Move/resize windows with Mod + LMB/RMB and dragging
 hl.bind(mod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind(mod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
