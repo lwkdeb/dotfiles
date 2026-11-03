@@ -23,6 +23,7 @@ hl.bind(mod .. " + Z", hl.dsp.exec_cmd("zen-browser"))
 hl.bind(mod .. " + T", hl.dsp.exec_cmd("vscodium"))
 -- hl.bind(mod .. " + A", hl.dsp.exec_cmd("pkill wofi || wofi --show drun"))
 hl.bind(mod .. " + A", hl.dsp.exec_cmd(ipc .. " panel-toggle launcher"))
+hl.bind(mod .. " + Return", hl.dsp.window.fullscreen_state({ internal = "0", client = "1" })) 
 
 -- Screenshot with hyprshot
 --hl.bind(mod .. " + PRINT", hl.dsp.exec_cmd("hyprshot -m window"))
